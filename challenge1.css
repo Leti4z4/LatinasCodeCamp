@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-style: medium;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: 'HankenGrotesk', 'Arial', 'Helvetica';
+}
+
+
+.container {
+  background-color: white;
+  height: 32rem;
+  width: 47rem;
+  box-shadow: 10px 10px 10px rgb(230, 230, 230);
+  display: flex;
+  border-radius: 10%;
+}
+
+.left-section {
+  width: 50%;
+  background: linear-gradient(#7573e0, #4a36ef, #33339b);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  width: 100%;
+  color: aliceblue;
+  justify-content: center;
+  display: flex;
+  font-size: 1.3rem;
+}
+
+.header-nbr-container {
+  border-radius: 50%;
+  background: linear-gradient(#33339b, #4a36ef);
+  width: 13rem;
+  height: 13rem;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  color: aliceblue;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-number {
+  font-size: 1rem;
+}
+
+.concept {
+  margin: 1rem;
+}
+
+.comment-result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 1rem;
+  width: 82%;
+  font-size: 0.9rem;
+}
+
+.concept-text {
+  color: #dbdbcf;
+}
+
+.right-section {
+  width: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  width: 100%;
+  color: rgb(64, 67, 70);
+  justify-content: left;
+  display: flex;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reaction-result {
+  height: 3rem;
+  border: none;
+  border-radius: 0.7rem;
+  color: #ec575f;
+  background-color: #fff6f5;
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.icono-rayo {
+  height: 50%;
+  width: auto;
+  margin: 0 0.5rem 0 0;
+}
+
+.reaction {
+  display: flex;
+}
+.container-reaction-value{
+  color: #b1b5c2;
+}
+.reaction-value {
+  display: flex;
+  font-weight: 700;
+}
+.points {
+  color: #303b59;
+  margin: 0 0.5rem 0 0;
+}
+.container-value{
+  color: #b1b5c2;
+}
+.memory-result {
+  height: 3rem;
+  border: none;
+  border-radius: 0.7rem;
+  color: rgb(226, 147, 27);
+  background-color: #fefbf4;
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.icono-memory {
+  height: 50%;
+  width: auto;
+  margin: 0 0.5rem 0 0;
+}
+.memory {
+  display: flex;
+}
+.memory-value {
+  display: flex;
+  font-weight: 700;
+}
+.verbal-result {
+  height: 3rem;
+  border: none;
+  border-radius: 0.7rem;
+  color: rgb(34, 211, 143);
+  background-color: #f2fbfa;
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.icono-verbal {
+  height: 50%;
+  width: auto;
+  margin: 0 0.5rem 0 0;
+}
+.verbal {
+  display: flex;
+}
+.verbal-value {
+  display: flex;
+  font-weight: 700;
+}
+.visual-result {
+  height: 3rem;
+  border: none;
+  border-radius: 0.7rem;
+  color: rgb(48, 31, 201);
+  background-color: #f3f3fd;
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.icono-visual {
+  height: 50%;
+  width: auto;
+  margin: 0 0.5rem 0 0;
+}
+.visual {
+  display: flex;
+}
+.visual-value {
+  display: flex;
+  font-weight: 700;
+}
+.button-continue {
+  margin: 3rem 0 0 0;
+}
+
+button {
+  border-radius: 4rem;
+  height: 3rem;
+  border: none;
+  width: 100%;
+  background-color: #303b59;
+  color: #fff;
+}
+@media screen and (max-width: 800px)
+{ .container{display: flex;
+  flex-direction: column;
+  height: auto;
+  }
+  body{
+    height: auto;
+      }
+  .right-section{
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+  }
+.left-section{
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0 0 10% 10%;
+    padding: 1rem;
+  }
+  .right-content{
+    width: 100%;
+  }
+  .header-nbr-container{
+    margin: 1rem;
+  }
+  .button-continue{
+    margin: 1rem;
+  }
+  }
+  
